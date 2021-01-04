@@ -70,7 +70,7 @@
             <div class="form-group">
                 @Html.LabelFor(model => model.Small_Image, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    <input type="file" id="img" name="img" class="btn btn-info" />
+                    <input type="file" id="img" name="img" accept="image/*" class="btn btn-info" />
 
                     @Html.ValidationMessageFor(model => model.Small_Image, "", new { @class = "text-danger" })
                 </div>
