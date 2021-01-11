@@ -60,7 +60,7 @@ namespace Web_API.Controllers
 
                 TempData["loginstatus"] = "<script>alert('login succefully !!')</script>";
                 
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Home1", "Home");
 
             }
             else

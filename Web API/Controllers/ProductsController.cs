@@ -10,7 +10,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
-
+using System.Web.Http.OData;
 
 namespace WebApiInMVC.Controllers
 {
@@ -18,6 +18,7 @@ namespace WebApiInMVC.Controllers
     {
         private UserEntities1 db = new UserEntities1();
         // GET: api/Products
+        [EnableQuery]
         public IHttpActionResult GetProducts()
         {
             var res = db.Products.ToList();

@@ -17,7 +17,7 @@ namespace Web_API.Controllers
 
 
         // GET: Home
-        public ActionResult Home()
+        public ActionResult Home1()
         {
 
             if (Session["UserId"] == null)
